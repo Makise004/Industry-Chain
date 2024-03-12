@@ -1,0 +1,77 @@
+/*删除默认内外边距*/
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size: 62.5%;  /*设置过根节点文字大小后，子节点文字大小相对于根节点调整*/
+}
+body, input, button, a, textarea, select {
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB';
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #333;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover, a:focus {
+    text-decoration: none;
+}
+a:hover {
+    filter: alpha(opacity=90);
+    opacity: .9;
+}
+/*文本对齐*/
+.tc {
+    text-align: center;
+}
+.tr {
+    text-align: right;
+}
+.tl {
+    text-align: left;
+}
+/*主体*/
+.content {
+    color: #fff;
+    background: #02040621;
+    width: 100%;
+    height: 96vh;
+}
+/*背景*/
+.bg {
+    height: 100%;
+    width: 99%;
+    padding: 8px;
+    /* background-image: url(../imgs/4.png); */
+    background-size: 100%;
+}
+/*表格*/
+.module-box {
+    display: flex;
+    margin: 5px;
+}
+.header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-center {
+    transform: translateY(30px);
+}
+.header .title {
+    color: rgb(242, 243, 245);
+    font-size: 0.145rem;
+    font-weight: 700;
+    position: absolute;
+    left:38.5%;
+}
